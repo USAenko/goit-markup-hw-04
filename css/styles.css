@@ -110,12 +110,18 @@ img{
     margin-left: auto;
 }
 
+.header-list-item{
+    display: flex;
+    align-items: center;
+}
+
 .header-list-item:not(:first-child),
 .header-nav-list-item:not(:first-child){
     margin-left: 50px;
 }
 
 .header-contact {
+    margin-left: 10px;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -128,10 +134,22 @@ img{
     text-decoration: none;
 }
 
+.header-contact-envelope{
+    width: 16px;
+    height: 12px;
+    fill: var(--secondary-text-color);
+}
+
+.header-contact-smartphone{
+    width: 10px;
+    height: 16px;
+}
+
 .nav-link:hover, 
 .nav-link:focus,
 .header-contact:hover,
 .header-contact:focus,
+.header-list-item:hover,
 .nav-link-current{
     color: var(--accent-color);
 }
