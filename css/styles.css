@@ -19,7 +19,8 @@ p{
     margin: 0;
 }
 
-ul {
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -71,7 +72,7 @@ img{
 
 .header-logo{
     display: flex;
-    align-items: center;;
+    align-items: center;
 }
 
 .header-logo,
@@ -112,7 +113,7 @@ img{
 
 .header-list-item{
     display: flex;
-    align-items: center;
+    
 }
 
 .header-list-item:not(:first-child),
@@ -121,10 +122,8 @@ img{
 }
 
 .header-contact {
-    margin-left: 10px;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
 
     font-weight: 500;
     font-size: 14px;
@@ -135,12 +134,15 @@ img{
 }
 
 .header-contact-envelope{
+    margin-right: 10px;
+    fill: currentColor;
     width: 16px;
     height: 12px;
-    fill: var(--secondary-text-color);
 }
 
 .header-contact-smartphone{
+    margin-right: 10px;
+    fill: currentColor;
     width: 10px;
     height: 16px;
 }
